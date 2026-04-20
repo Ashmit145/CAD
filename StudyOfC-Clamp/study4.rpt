@@ -1,0 +1,215 @@
+------------------------------------------------------------
+Creo Simulate Structure Version Q-11-53:spg
+Summary for Design Study "study4"
+Fri Apr 17, 2026   22:50:13
+------------------------------------------------------------
+
+Run Settings
+   Memory allocation for block solver: 512.0     
+
+Parallel Processing Status
+   Parallel task limit for current run:           28
+   Parallel task limit for current platform:      64
+   Number of processors detected automatically:   28
+
+Checking the model before creating elements...
+These checks take into account the fact that AutoGEM will
+automatically create elements in volumes with material
+properties, on surfaces with shell properties, and on curves
+with beam section properties.
+   Generate elements automatically.
+Checking the model after creating elements...
+No errors were found in the model.
+Creo Simulate Structure Model Summary
+
+   Principal System of Units: millimeter Newton Second (mmNs)
+
+   Length:          mm
+   Force:           N
+   Time:            sec
+   Temperature:     C
+
+   Model Type: Three Dimensional
+
+   Points:                351
+   Edges:                1690
+   Faces:                2346
+
+   Springs:                 0
+   Masses:                  0
+   Beams:                   0
+   Shells:                  0
+   Solids:               1007
+
+   Elements:             1007
+
+------------------------------------------------------------
+
+Optimization Design Study
+
+Using Sequential Quadratic Programming Optimization
+Algorithm
+Fri Apr 17, 2026   22:50:14
+
+Goal
+   Minimize: total_mass  
+
+Limit: 1
+   Analysis: Analysis1
+   Load Set: LoadSet1
+   max_stress_xy <  6.0000e+02
+
+Parameter           Min. Value   Initial Value  Max. Value
+d13                         50            60            70
+d24                        100           120           200
+d0                          60            70            80
+
+Optimization Convergence Tolerance: 5         %
+Maximum Number of Optimization Iterations: 20
+
+Begin Analysis of Goal and Limits of             (22:50:14)
+Initial Design
+
+------------------------------------------------------------
+
+Initial Design Status
+Parameters:
+   d13                         60
+   d24                        120
+   d0                          70
+Goal:   1.5121e-02
+Status of Optimization Limits:
+1. max_stress_xy    -2.4471e+02 <   6.0000e+02 (satisfied within tolerance)
+
+Resource Check                                   (22:50:23)
+   Elapsed Time     (sec):      22.13
+   CPU Time         (sec):       3.83
+   Memory Usage      (kb):     661514
+   Wrk Dir Dsk Usage (kb):          8
+
+Begin Optimization Iteration 1                   (22:50:23)
+
+Result of Optimization Iteration 1
+Parameters:
+   d13                    59.7707
+   d24                        100
+   d0                     62.2496
+Goal:   1.1482e-02
+Status of Optimization Limits:
+1. max_stress_xy    -2.3495e+02 <   6.0000e+02 (satisfied within tolerance)
+
+Resource Check                                   (22:50:27)
+   Elapsed Time     (sec):      26.01
+   CPU Time         (sec):       8.09
+   Memory Usage      (kb):     661794
+   Wrk Dir Dsk Usage (kb):         12
+
+Begin Optimization Iteration 2                   (22:50:27)
+
+Result of Optimization Iteration 2
+Parameters:
+   d13                    59.5389
+   d24                        100
+   d0                          60
+Goal:   1.0898e-02
+Status of Optimization Limits:
+1. max_stress_xy    -2.4949e+02 <   6.0000e+02 (satisfied within tolerance)
+
+Resource Check                                   (22:50:30)
+   Elapsed Time     (sec):      29.31
+   CPU Time         (sec):      11.72
+   Memory Usage      (kb):     677826
+   Wrk Dir Dsk Usage (kb):         15
+
+Begin Optimization Iteration 3                   (22:50:30)
+
+Result of Optimization Iteration 3
+Parameters:
+   d13                    59.3617
+   d24                        100
+   d0                          60
+Goal:   1.0896e-02
+Status of Optimization Limits:
+1. max_stress_xy    -2.4949e+02 <   6.0000e+02 (satisfied within tolerance)
+
+Resource Check                                   (22:50:33)
+   Elapsed Time     (sec):      32.56
+   CPU Time         (sec):      13.80
+   Memory Usage      (kb):     694010
+   Wrk Dir Dsk Usage (kb):         19
+
+Begin Optimization Iteration 4                   (22:50:33)
+
+Result of Optimization Iteration 4
+Parameters:
+   d13                    57.5958
+   d24                        100
+   d0                          60
+Goal:   1.0885e-02
+Status of Optimization Limits:
+1. max_stress_xy    -2.4804e+02 <   6.0000e+02 (satisfied within tolerance)
+
+Resource Check                                   (22:50:37)
+   Elapsed Time     (sec):      35.99
+   CPU Time         (sec):      17.28
+   Memory Usage      (kb):     711286
+   Wrk Dir Dsk Usage (kb):         23
+
+Begin Optimization Iteration 5                   (22:50:37)
+
+Result of Optimization Iteration 5
+Parameters:
+   d13                         50
+   d24                        100
+   d0                          60
+Goal:   1.0840e-02
+Status of Optimization Limits:
+1. max_stress_xy    -2.4694e+02 <   6.0000e+02 (satisfied within tolerance)
+
+Resource Check                                   (22:50:40)
+   Elapsed Time     (sec):      39.53
+   CPU Time         (sec):      21.00
+   Memory Usage      (kb):     711382
+   Wrk Dir Dsk Usage (kb):         28
+
+Begin Optimization Iteration 6                   (22:50:40)
+Converged to optimum design.
+
+Best Design Found:
+Parameters:
+   d13                         50
+   d24                        100
+   d0                          60
+Goal:   1.0840e-02
+
+Optimization study statistics:
+Number of Base Analyses: 6
+Number of Perturbation Analyses: 1
+
+------------------------------------------------------------
+
+Memory and Disk Usage:
+
+   Machine Type: Windows 64 
+   RAM Allocation for Solver (megabytes): 512.0
+
+   Total Elapsed Time (seconds): 41.70     
+   Total CPU Time     (seconds): 22.52     
+   Maximum Memory Usage (kilobytes): 727614    
+   Working Directory Disk Usage (kilobytes): 38920     
+   Total Elapsed Time in Parameter Updates (seconds):
+      13.92     
+   Total Engine Elapsed Time Minus Param. Updates (seconds):
+      27.78     
+   Total CPU Time in Parameter Updates (seconds):
+      7.91      
+   Total Engine CPU Time Minus Param. Updates (seconds):
+      14.61     
+
+   Results Directory Size (kilobytes):
+   17172 .\study4
+
+------------------------------------------------------------
+Run Completed
+Fri Apr 17, 2026   22:50:43
+------------------------------------------------------------
